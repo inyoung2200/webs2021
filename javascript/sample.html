@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>javascript</title>
+</head>
+
+<body>
+    <script>
+        //배열
+        let arr1 = new Array();
+        
+        let arr2 = new Array(100, 200, 300);
+        
+        let arr3 = [];
+        
+        let arr4 = [100, 200, 300];
+        
+        //배열 길이 구하기
+        document.write(arr4.length, "<br><br>");
+        
+        //배열 데이터 가져오기
+        let arr5 = [100,200,300,400,500];
+        
+        // //출력
+        document.write(arr5[0], "<br>");
+        document.write(arr5[1], "<br>");
+        document.write(arr5[2], "<br>");
+        document.write(arr5[3], "<br>");
+        document.write(arr5[4], "<br>");
+
+        //foo문
+        for( let i=0; i<arr5.length; i++){
+            document.write(arr5[i], "<br><br>");
+        }
+        //i=0 0<5 document.write(arr5[0], "<br>"); -->100
+        //i=1 1<5 document.write(arr5[1], "<br>"); -->200
+        //i=2 2<5 document.write(arr5[2], "<br>"); -->300
+        //i=3 3<5 document.write(arr5[3], "<br>"); -->400
+        //i=4 4<5 document.write(arr5[4], "<br>"); -->500
+        //i=5 5<5 (만족하지 않으므로 수행x) document.write(arr5[4], "<br>"); -->500
+
+        const arr7 = [100,200,300,400,500];
+
+        arr7.forEach(function(element, index, array){
+            document.write(element, "<br>");
+            document.write(index, "<br>");
+            document.write(array, "<br>");
+        })
+        
+        document.write("<br><br>");
+
+        //map
+        const arr8 = [100,200,300,400,500]; //condt, let 모두 사용가능
+
+        arr8.map(function(elem){
+            document.write(elem, "<br>");
+        });
+    </script>
+</body>
+
+</html>

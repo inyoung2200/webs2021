@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+</head>
+<body>
+  <script>
+    //함수
+    //선언적 함수
+    function func1() {
+      documemt.write("func1이 싱행되었습니다.");
+    }
+    func1();
+
+    //화살표 함수 (선언적 함수)
+    fucn2 = () => {
+      document.write("func2이 싱행되었습니다.");
+    }
+
+    //화살표 함수 (선언적 함수) 한줄(중괄호 생략)
+    func3 = () => documemt.write("func3이 싱행되었습니다.");
+
+    //익명 함수
+    const func4 = function () {
+      document.write("func4이 싱행되었습니다.");
+    }
+
+    //화살표 함수(익명 함수)
+    const func5 = () => {
+      document.write("func5이 싱행되었습니다.");
+    }
+    
+    //화살표 함수(익명 함수) 한줄(중괄호 생략)
+    const func6 = () => documemt.write("func6이 싱행되었습니다.");
+    
+    //리턴값이 있는 함수
+    function func7() {
+      const str = "func6이 싱행되었습니다.<br>";
+      return str
+    }
+    documemt.write(func7());
+
+    //화살표 함수(리턴값이 있는 함수)
+    func8 = () => {
+      const str = "func8이 싱행되었습니다.<br>"
+      return str;
+    }
+    documemt.write(func8());
+
+    //매개변수가 있는 함수
+    function func10(name) {
+      documemt.write(func10(name));
+    }
+    func10("func10이 싱행되었습니다.");
+
+    //화살표 함수(매개변수가 있는 함수)
+    func11 = (name) => {
+      documemt.write(func11(name));
+    }
+    func11("func11이 싱행되었습니다.");
+
+    //매개변수가 있는 함수 --> 익명 함수
+    const func12 = (name) => {
+      documemt.write(func11(name));
+    }
+    func12("func12이 싱행되었습니다.");
+
+    //매개변수가 있는 함수 --> 익명 함수 --> 한줄
+    const func13 = (name) => documemt.write(name);
+
+    func13("func13이 싱행되었습니다.");
+
+    //매개변수가 있는 함수 --> 익명 함수 --> 한줄 --> 괄호
+    const func14 = name => documemt.write(name);
+
+    //매개변수가 있는 함수 --> 선언적 함수 --> 한줄 --> 괄호
+    
+  </script>
+</body>
+</html>
